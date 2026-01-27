@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-07-09 09:34:12 by Eclipse SUMO sumo Version v1_20_0+1108-c96756d91d1
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="input_net.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+        <additional-files value="input_additional.add.xml"/>
+    </input>
+
+    <output>
+        <fcd-output value="fcd.xml"/>
+    </output>
+
+    <report>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="43389"/>
+    </traci_server>
+
+</sumoConfiguration>
+-->
+
+<ToCDeviceLog>
+    <ToCup id="ToC_veh" t="2.00" lane=":2/1_0_0" lanePos="1.57" x="2878.05" y="2448.76"/>
+    <TOR id="ToC_veh" t="127.00" lane="4/1to5/1_0" lanePos="567.20" x="636.20" y="2693.08"/>
+    <MRM id="ToC_veh" t="139.00" lane="4/1to5/1_0" lanePos="816.51" x="434.50" y="2546.54"/>
+    <ToCdown id="ToC_veh" t="150.00" lane="4/1to5/1_0" lanePos="979.05" x="303.01" y="2451.01"/>
+    <ToCup id="ToC_veh" t="202.00" lane="5/1to6/1_0" lanePos="826.25" x="43.45" y="1660.95"/>
+    <TOR id="ToC_veh" t="227.00" lane="6/1to7/1_0" lanePos="359.85" x="106.49" y="1167.48"/>
+    <ToCup id="ToC_veh" t="242.00" lane="6/1to7/1_0" lanePos="671.49" x="202.79" y="871.09"/>
+    <TOR id="ToC_veh" t="252.00" lane="6/1to7/1_0" lanePos="879.25" x="266.99" y="673.50"/>
+    <ToCup id="ToC_veh" t="262.00" lane="7/1to8/1_0" lanePos="102.85" x="383.76" y="512.79"/>
+    <TOR id="ToC_veh" t="277.00" lane="7/1to8/1_0" lanePos="414.49" x="635.88" y="329.61"/>
+    <ToCdown id="ToC_veh" t="300.00" lane="7/1to8/1_0" lanePos="892.34" x="1022.46" y="48.74"/>
+    <ToCup id="ToC_veh" t="302.00" lane="7/1to8/1_0" lanePos="925.46" x="1049.26" y="29.27"/>
+    <TOR id="ToC_veh" t="377.00" lane="9/1to10/1_0" lanePos="513.63" x="2498.46" y="297.89"/>
+    <ToCdown id="ToC_veh" t="400.00" lane="10/1to1/1_0" lanePos="7.32" x="2881.49" y="582.65"/>
+</ToCDeviceLog>
