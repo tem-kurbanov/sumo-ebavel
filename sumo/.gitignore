@@ -161,3 +161,5 @@ __pycache__
 *.aps
 .gdb_history
 .env
+!data/3D/
+!data/3D/**/*.obj
