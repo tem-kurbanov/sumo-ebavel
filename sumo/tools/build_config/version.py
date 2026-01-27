@@ -43,7 +43,19 @@ def get_version(padZero=True):
 
 
 def get_pep440_version():
-    v = get_version(padZero=False).replace("_", ".").replace("+", ".post")
+    """
+    Return a PEP 440 compliant version string for Python packaging.
+
+    The original implementation assumes a git-describe-like string containing '-'.
+    In one-off forks / missing tags / shallow checkouts, get_version() may return
+    "UNKNOWN" or something without '-', which used to produce the invalid version
+    "NKNOW" due to slicing. In that case we just fall back to "0.0.0".
+    """
+    raw = get_version(padZero=False)
+    if not raw or raw == "UNKNOWN" or "-" not in raw:
+        return "0.0.0"
+
+    v = raw.replace("_", ".").replace("+", ".post")
     v = v[1:v.rfind("-")]
     vs = v.split(".")
     if len(vs) == 4 and vs[3] == "post0":
